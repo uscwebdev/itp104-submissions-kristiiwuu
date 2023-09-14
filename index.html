@@ -7,47 +7,121 @@
             strong{
                 background-color: turquoise;
             }
+
             img{
-                height: 200px;
+                height: 120px;
                 width: auto;
+            }
+
+            #container {
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                /* background-color: lightgreen; */
+            }
+
+            /* #section-one {
+                padding: 20px;
+            } */
+
+            #section-two {
+                display: flex;
+            }
+
+            #favorites {
+                width: 230px;
+                padding: 10px;
+                /* background-color: pink; */
+            }
+
+            #classes {
+                width: 230px;
+                padding: 10px;
+                /* background-color: lightskyblue; */
+            }
+
+            #section-three {
+                display: flex;
+            }
+
+            #assignments {
+                width: 230px;
+                padding: 10px; 
+                /* background-color: purple; */
+            }
+
+            #labs {
+                width: 230px;
+                padding: 10px;
+                /* background-color: yellow; */
             }
         </style>
     </head>
     <body>
-        <h1>Kristi Wu</h1>
+        <div id="container">
+            <div id="section-one">
+                <h1>Kristi Wu</h1>
 
-        <p><a href="mailto:">kawu@usc.edu</a></p>
+                <p><a href="mailto:kawu@usc.edu">kawu@usc.edu</a></p>
+            </div>
+            <hr>
+            <!-- #section-one -->
+            <div id="section-two">
+                <div id="favorites">
+                    <p>Favorite color: <strong>Turquoise</strong></p>
 
-        <p>Favorite color: <strong>Turquoise</strong></p>
+                    <p>Favorite website: <a target="_blank" href="https://www.canva.com/">Canva</a></p>
 
-        <p>Favorite website: <a target="_blank" href="https://www.canva.com/">Canva</a></p>
+                    <p>Favorite activity:</p>
 
-        <p>Favorite activity:</p>
+                    <img src="https://goccusports.com/images/2023/6/22/volleyball_on_court.png" alt="Volleyball">
+                </div>
+                <!-- #favorites -->
+                <div id="classes">
+                    <p>Fall 2023 Schedule:</p>
 
-        <img src="https://goccusports.com/images/2023/6/22/volleyball_on_court.png" alt="Volleyball">
+                    <ul>
+                        <li>MATH 126: Calculus II</li>
+                        <li>ENGL 298: Introduction to the Genre of Fiction</li>
+                        <li>CSCI 170: Discrete Methods in Computer Science</li>
+                        <li>ITP 104: Introduction to Web Development</li>
+                        <li>ECON 351: Microeconomics for Business</li>
+                    </ul>
+                </div>
+                <!-- #classes -->
+            </div>
+            <!-- #section-two -->
+            <hr>
+            <div id="section-three">
+                <div id="assignments">
+                    <p>Assignments:</p>
 
-        <p>Fall 2023 Schedule:</p>
+                    <ul>
+                        <li><a target="_blank" href="assignment_01/assignment_01.html">Assignment 1</a></li>
+                        <li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2</a></li>
+                        <li><a target="_blank" href="assignment_03/assignment_03.html">Assignment 3</a></li>
+                    </ul>
+                    
+                </div>
+                <!-- #assignments -->
+                <div id="labs">
+                    <p>Labs:</p>
 
-        <ul>
-            <li>MATH 126: Calculus II</li>
-            <li>ENGL 298: Introduction to the Genre of Fiction</li>
-            <li>CSCI 170: Discrete Methods in Computer Science</li>
-            <li>ITP 104: Introduction to Web Development</li>
-            <li>ECON 351: Microeconomics for Business</li>
-        </ul>
+                    <ul>
+                        <li><a target="_blank" href="lab_02/index.html">Lab 2: Student Page</a></li>
+                        <li><a target="_blank" href="lab_03/assignment_01.html">Lab 3: Updated Resume</a></li>
+                        <li><a target="_blank" href="index.html">Lab 4: Student Page Layout</a></li>
+                    </ul>
 
-        <p>Assignments:</p>
-
-        <ul>
-            <li><a target="_blank" href="assignment_01/assignment_01.html">Assignment 1</a></li>
-            <li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2</a></li>
-        </ul>
-
-        <p>Labs:</p>
-
-        <ul>
-            <li><a target="_blank" href="lab_02/index.html">Lab 2: Student Page</a></li>
-            <li><a target="_blank" href="lab_03/assignment_01.html">Lab 3: Updated Resume</a></li>
-        </ul>
+                </div>
+                <!-- #labs -->
+            </div>
+            <!-- #section-three -->
+        </div>
+        <!-- #container -->
     </body>
 </html>
+
+<!-- Questions:
+line 33; do I need to set a width -> no!
+do I update the index.html or the one in lab 2 folder or make a lab 3 folder with a copy -> update og index.html -->
