@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ascend Registration Form</title>
+        <style>
+            #container {
+                background-color: #FFDB9C;
+                width: 850px;
+                height: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1 {
+                text-align: center;
+                margin: 0px;
+                padding: 20px;
+            }
+            .form-row {
+                margin: 10px 10px;
+                display: flex;
+            }
+            .left-col {
+                width: 150px;
+                /* margin: 0px 10px; */
+            }
+            #pic {
+                margin: 0px 10px;
+                height: 100px;
+                width: auto;
+                float: right;
+            }
+            .button {
+                margin: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Ascend Registration Form</h1>
+
+            <img id="pic" src="ascend.png" alt="Ascend Logo">
+
+            <form action="form-submission.html">
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="name-id">Full Name:</label>
+                    </div>
+                    <input type="text" id="name-id" placeholder="Tommy Trojan">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="email-id">Email:</label>
+                    </div>
+                    <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="phone-id">Phone Number:</label>
+                    </div>
+                    <input type="text" id="phone-id" placeholder="(123)-123-1234">
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        Grade Level:
+                    </div>
+                    <label>
+                        <input type="radio" name="grade">
+                        Freshman
+                    </label>
+                    <label>
+                        <input type="radio" name="grade">
+                        Sophmore
+                    </label>
+                    <label>
+                        <input type="radio" name="grade">
+                        Junior
+                    </label>
+                    <label>
+                        <input type="radio" name="grade">
+                        Senior
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        Event Reservation:
+                    </div>
+                    <label>
+                        <input type="checkbox">
+                        Johnson & Johnson Panel
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Consulting Panel
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Membership Event
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Retreat
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="year-id">Birth Year:</label>
+                    </div>
+                    <select id="year-id">
+                        <option disabled selected>Select One</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="question-id">Questions/Concerns:</label> 
+                    </div>
+                    <textarea id="question-id" placeholder="Type Here"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <input type="checkbox" id="terms-id">
+                    <label for="terms-id">I accept terms & conditions.</label>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="button">Submit</button>
+                    <button type="reset" class="button">Reset</button>
+                </div>
+            </form>
+        </div>
+        <!-- #container -->
+    </body>
+</html>
+
+<!-- Questions
+for dropdowns, how can I add a placeholder attribute?                   <option disabled selected> 
+for text, I can't just put label tags? i need to do id?                 2 different methods; radio & checkbox simply use <label></label>
+.form-row; display: flex   this is what makes it side by side?          Yes
+-->

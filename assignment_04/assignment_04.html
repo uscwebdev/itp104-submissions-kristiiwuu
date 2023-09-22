@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>April</title>
+        <style>
+           
+            table {
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+                /* padding: 30px; */
+            }
+
+            h1 {
+                background-image: url("img/spring.jpg");
+                padding: 0px;
+                margin: 0px;
+                height: 200px;
+                line-height: 200px;
+                text-shadow: 0px 0px 10px pink;
+                /* background-size: cover; */
+            }
+
+            th {
+                border: 1px solid black;
+                text-align: center;
+                width: 141.71px;
+                padding: 0px;
+                /* width of table = 1000px
+                # of cells = 7
+                width of border = 1px * 8 = 8px
+                1000-8 = 992 / 7 = 141.71px */
+            }
+
+            td {
+                border: 1px solid black;
+                height: 110px;
+                vertical-align: top;
+                text-align: right;
+                padding: 5px;
+            }
+
+            .gray {
+                color: #CCC;
+            }
+
+            #birthday {
+                color: white;
+                font-weight: bold;
+                text-shadow: 0px 0px 5px #000;
+                background-image: url("img/birthday.jpg");
+                background-size: cover;
+            }
+
+            #holiday {
+                color: white;
+                font-weight: bold;
+                text-shadow: 0px 0px 5px #000;
+                background-image: url("img/april-fools.jpg");
+                background-size: cover;
+            }
+
+            #earth-day {
+                color: white;
+                font-weight: bold;
+                text-shadow: 0px 0px 5px #000;
+                background-image: url("img/earth.webp");
+                background-size: cover;
+            }
+
+            .event-name {
+                text-align: center;
+                margin: 0px;
+                padding: 0px;
+                line-height: 85px;
+            }
+
+            .day {
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="7"><h1>April 2024</h1></th>
+            </tr>
+                <tr>
+                    <th class="day">Sun</th>
+                    <th class="day">Mon</th>
+                    <th class="day">Tue</th>
+                    <th class="day">Wed</th>
+                    <th class="day">Thu</th>
+                    <th class="day">Fri</th>
+                    <th class="day">Sat</th>
+                </tr>
+            <!-- Week 1: -->
+            <tr>
+                <td class="gray">31</td>
+                <td id="holiday">
+                    1
+                    <p class="event-name">April Fools' Day</p>
+                </td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <!-- Week 2: -->
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td id="birthday">
+                    10
+                    <p class="event-name">Birthday</p>
+                </td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <!-- Week 3: -->
+            <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <!-- Week 4: -->
+            <tr>
+                <td>21</td>
+                <td id="earth-day">
+                    22
+                    <p class="event-name">Earth Day</p>
+                </td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>17</td>
+            </tr>
+            <!-- Week 5: -->
+            <tr>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td class="gray">1</td>
+                <td class="gray">2</td>
+                <td class="gray">3</td>
+                <td class="gray">4</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!-- Questions:
+Class vs. ID 
+line 12: why does padding not do anything? bc it's a table?
+Div tags around <tr></tr>? It adds padding to the very top; what are the rules with div tags within tables?-->
