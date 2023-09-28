@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery Page</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #header{
+                height: 300px;
+                line-height: 300px;
+                background-image: url("img/gallery-header.jpg");
+                object-fit: cover;
+            }   
+
+            #container {
+                width: 1000px;
+                background-color:#B3E6C6;
+                padding: 10px;
+            }
+
+            #first-row, #second-row, #third-row, #fourth-row {
+                display: flex;
+            }
+
+            #first-row > .pic {
+                height: 200px;
+                width: 480px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #second-row > .small-pic {
+                height: 200px;
+                width: 230px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #second-row > .med-pic {
+                height: 200px;
+                width: 480px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #third-row > .large-pic {
+                height: 400px;
+                width: 480px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #third-row-mid > .top-pic, .bot-pic {
+                height: 190px;
+                width: 230px;
+                background-color: blue;
+                margin: 0px;
+            }
+
+            #third-row-mid > .top-pic {
+                margin: 10px 10px 20px 10px;
+            }
+
+            .bot-pic {
+                margin: 0px 10px 10px 10px;
+            }
+
+            #third-row-right > .tall-pic {
+                height: 400px;
+                width: 230px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #fourth-row > .pic {
+                height: 200px;
+                width: 1980px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #navbar a:hover, #navbar #highlight-gallery {
+                color: #FFC5C6;
+                border-bottom: 2px solid #FFC5C6;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Gallery</h1>
+        </div>
+        <!-- #header -->
+
+        <div id="navbar">
+            <a href="assignment_05.html#home-section">Home</a>
+            <a id="highlight-gallery" href="gallery.html">Gallery</a>
+        </div>
+        <!-- #navbar -->
+
+        <div id="container"> 
+            <div id="first-row">
+                <div class="pic"></div>
+                <div class="pic"></div>
+            </div>
+            <!-- #top-row -->
+            <div id="second-row">
+                <div class="small-pic"></div>
+                <div class="med-pic"></div>
+                <div class="small-pic"></div>
+            </div>
+            <!-- #second-row -->
+            <div id="third-row">
+                <div class="large-pic"></div>
+                <div id="third-row-mid">
+                    <div class="top-pic"></div>
+                    <div class="bot-pic"></div>
+                </div>
+                <!-- #third-row-mid -->
+                <div id="third-row-right">
+                    <div class="tall-pic"></div>
+                </div>
+                <!-- #third-row-right -->
+            </div>
+            <!-- #third-row -->
+            <div id="fourth-row">
+                <div class="pic"></div>
+            </div>
+        </div>
+        <!-- #container -->
+        <div id="footer">
+            Cooking Portfolio &copy; 2023
+        </div>
+        <!-- #footer -->
+    </body>
+</html>

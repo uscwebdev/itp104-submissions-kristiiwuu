@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <style>
+            #header {
+                /* background-color: yellow; */
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            #gallery {
+                /* background-color: lightskyblue; */
+                background-image: url("background.jpg");
+                background-size: cover;
+                width: 1000px; 
+                margin-left: auto;
+                margin-right: auto;
+
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center; */
+            }
+
+            h1 {
+                margin: 0px;
+            }
+
+            .pics {
+                height: 200px;
+                width: auto;
+                margin: 10px;
+                
+                opacity: 0.7;
+            }
+        
+            .pics:hover {
+                opacity: 1.0;
+            }
+
+            p {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .img-container > p {
+                margin: 10px;
+                visibility: hidden;
+            }
+
+            .img-container:hover p {
+                visibility: visible;
+            }
+
+            #row-1, #row-2 {
+                display: flex;
+                justify-content: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Travel Diary</h1>
+        </div>
+        <!-- #header -->
+        <div id="gallery">
+            <div id="row-1">
+                <div class="img-container">
+                    <img class="pics" src="florida.jpg" alt="Orlando, Florida">
+                    <p>Orlando Florida</p>
+                    <p>2019</p>
+                </div>	
+                <div class="img-container"> 
+                    <img class="pics" src="vietnam.jpg" alt="Phu Quoc, Vietnam">
+                    <p>Phu Quoc, Vietnam</p>
+                    <p>2019</p>
+                </div>
+                <div class="img-container"> 
+                    <img class="pics" src="korea.JPG" alt="Seoul, Korea">
+                    <p>Seoul, Korea</p>
+                    <p>2019</p>
+                </div>
+            </div>
+            <!-- #row-1 -->
+            <div id="row-2">
+                <div class="img-container"> 
+                    <img class="pics" src="colorado.jpg" alt="Vail, Colorado">
+                    <p>Vail, Colorado</p>
+                    <p>2022</p>
+                </div>
+                <div class="img-container"> 
+                    <img class="pics" src="canada.jpg" alt="Toronto, Canada">
+                    <p>Toronto, Canada</p>
+                    <p>2023</p>
+                </div>
+                <div class="img-container"> 
+                    <img class="pics" src="alaska.jpg" alt="Carcross, Alaska">
+                    <p>Carcross, Alaska</p>
+                    <p>2023</p>
+                </div>
+            </div>
+            <!-- #row-2 -->
+        </div>
+        <!-- #gallery -->
+    </body>
+</html>
+
+<!-- Questions: Line 53: Is there another way to use CSS selectors to select the two p siblings?  RESOLVED-->
