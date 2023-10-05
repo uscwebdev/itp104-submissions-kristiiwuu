@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery Page</title>
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #header{
+                height: 300px;
+                line-height: 300px;
+                background-image: url("img/gallery-header.jpg");
+                object-fit: cover;
+            }   
+
+            #container {
+                width: 1000px;
+                background-color:#B3E6C6;
+                padding: 10px;
+            }
+
+            #first-row, #second-row, #third-row, #fourth-row {
+                display: flex;
+            }
+
+            #first-row > .pic {
+                height: 200px;
+                width: 480px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #second-row > .small-pic {
+                height: 200px;
+                width: 230px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #second-row > .med-pic {
+                height: 200px;
+                width: 480px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #third-row > .large-pic {
+                height: 400px;
+                width: 480px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #third-row-mid > .top-pic, .bot-pic {
+                height: 190px;
+                width: 230px;
+                background-color: blue;
+                margin: 0px;
+            }
+
+            #third-row-mid > .top-pic {
+                margin: 10px 10px 20px 10px;
+            }
+
+            .bot-pic {
+                margin: 0px 10px 10px 10px;
+            }
+
+            #third-row-right > .tall-pic {
+                height: 400px;
+                width: 230px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #fourth-row > .pic {
+                height: 200px;
+                width: 1980px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+            #navbar a:hover, #navbar #highlight-gallery {
+                color: #FFC5C6;
+                border-bottom: 2px solid #FFC5C6;
+            }
+
+            /* New */
+            .pic, .small-pic, .med-pic, .large-pic, .tall-pic, .top-pic, .bot-pic {
+                overflow: hidden;
+                position: relative;
+            }
+
+            .landscape {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -250px;
+            }
+
+            .landscape-1 {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -100px;
+            }
+
+            .landscape-2 {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: -350px;
+            }
+
+            .square {
+                height: auto;
+                width: 100%;
+                position: absolute;
+                bottom: -40px;
+            }
+
+            .square-1 {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                right: -50px;
+            }
+
+            .tall {
+                height: 100%;
+                width: auto;
+            }
+
+            .overlay {
+                /* Can set height & width; OR position absolute */
+                /* height: 200px;
+                width: 480px; */
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                visibility: hidden;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+                text-align: center;
+                font-size: 30px;
+                
+
+                padding-top: 85px;
+            }
+
+            .large-pic > .overlay, .tall-pic > .overlay {
+                padding-top: 185px;
+            }
+
+            .pic:hover > .overlay, .small-pic:hover > .overlay, .med-pic:hover > .overlay, 
+            .large-pic:hover > .overlay, .top-pic:hover > .overlay, .bot-pic:hover > .overlay, .tall-pic:hover > .overlay {
+                visibility: visible;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Gallery</h1>
+        </div>
+        <!-- #header -->
+
+        <div id="navbar">
+            <a href="assignment_06.html#home-section">Home</a>
+            <a id="highlight-gallery" href="gallery.html">Gallery</a>
+        </div>
+        <!-- #navbar -->
+
+        <div id="container"> 
+            <div id="first-row">
+                <div class="pic">
+                    <img class="landscape" src="img/acai.jpg" alt="Acai">
+                    <div class="overlay">Acai Bowl</div>
+                </div>
+                <div class="pic">
+                    <img class="landscape-1" src="img/beef-noodle-soup.jpg" alt="Beef Noodle Soup">
+                    <div class="overlay">Beef Noodle Soup</div>
+                </div>
+            </div>
+            <!-- #top-row -->
+            <div id="second-row">
+                <div class="small-pic">
+                    <img class="square" src="img/springroll.jpg" alt="Spring Rolls">
+                    <div class="overlay">Spring Rolls</div>
+                </div>
+                <div class="med-pic">
+                    <img class="landscape-1" src="img/parfait.jpg" alt="Parfait">
+                    <div class="overlay">Parfait</div>
+                </div>
+                <div class="small-pic">
+                    <img class="square-1" src="img/banh-xeo.jpg" alt="Banh Xeo">
+                    <div class="overlay">Banh Xeo</div>
+                </div>
+            </div>
+            <!-- #second-row -->
+            <div id="third-row">
+                <div class="large-pic">
+                    <img class="square" src="img/lava-cake.jpg" alt="Lava Cake">
+                    <div class="overlay">Lava Cake</div>
+                </div>
+                <div id="third-row-mid">
+                    <div class="top-pic">
+                        <img class="square" src="img/guac.jpg" alt="Guacamole">
+                        <div class="overlay">Guacamole</div>
+                    </div>
+                    <div class="bot-pic">
+                        <img class="square" src="img/dumplings.jpg" alt="Dumplings">
+                        <div class="overlay">Dumplings</div>
+                    </div>
+                </div>
+                <!-- #third-row-mid -->
+                <div id="third-row-right">
+                    <div class="tall-pic">
+                        <img class="tall" src="img/beignets.jpg" alt="Beignets">
+                        <div class="overlay">Beignets</div>
+                    </div>
+                </div>
+                <!-- #third-row-right -->
+            </div>
+            <!-- #third-row -->
+            <div id="fourth-row">
+                <div class="pic">
+                    <img class="landscape-2" src="img/pizza.jpg" alt="Pizza">
+                    <div class="overlay">Pizza</div>
+                </div>
+            </div>
+        </div>
+        <!-- #container -->
+        <div id="footer">
+            Cooking Portfolio &copy; 2023
+        </div>
+        <!-- #footer -->
+    </body>
+</html>

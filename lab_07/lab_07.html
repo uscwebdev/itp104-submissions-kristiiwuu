@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Puzzle</title> 
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        #img-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* background-color: yellow; */
+        }
+
+        #img-container img {
+            width: 300px;
+            height: auto;
+        }
+
+        #img-container img {
+            position: relative;
+        }
+
+        #top-left {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            box-shadow: 5px 5px 20px;
+        }
+
+        #bottom-right {
+            position: absolute;
+            bottom: 80px;
+            left: 20px;
+            z-index: 1;
+            box-shadow: 5px 5px 20px;
+        }
+
+        #center {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            z-index: 1;
+            box-shadow: 5px 5px 20px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Hawaii Puzzle</h1>
+
+    <div id="img-container">
+        <img id="top-left" src="row-1-column-1.jpg" alt="Row 1 Col 1">
+        <img src="row-1-column-2.jpg" alt="Row 1 Col 2">
+        <img src="row-1-column-3.jpg" alt="Row 1 Col 3">
+        <img src="row-2-column-1.jpg" alt="Row 2 Col 1">
+        <img id="center" src="row-2-column-2.jpg" alt="Row 2 Col 2">
+        <img src="row-2-column-3.jpg" alt="Row 2 Col 3">
+        <img src="row-3-column-1.jpg" alt="Row 3 Col 1">
+        <img src="row-3-column-2.jpg" alt="Row 3 Col 2">
+        <img id="bottom-right" src="row-3-column-2.jpg" alt="Row 3 Col 3">
+    </div>
+
+</body>
+</html>
