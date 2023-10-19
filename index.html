@@ -1,133 +1,159 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Kristi Wu | Student Page</title>
+<head>
+    <title>Kristi Wu | Student Page</title>
 
-        <style>
-            strong{
-                background-color: turquoise;
-            }
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-            img{
-                height: 120px;
+    <style>
+        /* good for setting background color */
+        /* html, body {
+            margin: 0px;
+            padding: 0px;
+        } */
+
+        h1 {
+            margin-top: 5px;
+        }
+
+        strong{
+            background-color: turquoise;
+        }
+
+        img{
+            height: 120px;
+            width: auto;
+        }
+
+        #container {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #section-two {
+            display: flex;
+        }
+
+        #favorites {
+            width: 380px;
+            padding: 10px;
+        }
+
+        #classes {
+            width: 380px;
+            padding: 10px;
+        }
+
+        #section-three {
+            display: flex;
+        }
+
+        #assignments {
+            width: 380px;
+            padding: 10px; 
+        }
+
+        #labs {
+            width: 380px;
+            padding: 10px;
+        }
+
+        @media (max-width: 767px) {
+            /* If I set #container width to auto, all the divs in that will adjust accordingly? 
+            if parent div is set to width auto, the children will inherit the parent's width*/
+            /* #container, #section-one, #section-two, #section-three {
+                width: auto;
+            } */
+
+            #container {
                 width: auto;
             }
 
-            #container {
-                width: 500px;
-                margin-left: auto;
-                margin-right: auto;
-                /* background-color: lightgreen; */
+            #section-two, #section-three {
+                flex-direction: column;
             }
 
-            /* #section-one {
-                padding: 20px;
-            } */
-
-            #section-two {
-                display: flex;
+            img {
+                width: 100%;
+                height: auto;
             }
+        }
 
-            #favorites {
-                width: 230px;
-                padding: 10px;
-                /* background-color: pink; */
-            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="section-one">
+            <h1>Kristi Wu</h1>
 
-            #classes {
-                width: 230px;
-                padding: 10px;
-                /* background-color: lightskyblue; */
-            }
-
-            #section-three {
-                display: flex;
-            }
-
-            #assignments {
-                width: 230px;
-                padding: 10px; 
-                /* background-color: purple; */
-            }
-
-            #labs {
-                width: 230px;
-                padding: 10px;
-                /* background-color: yellow; */
-            }
-        </style>
-    </head>
-    <body>
-        <div id="container">
-            <div id="section-one">
-                <h1>Kristi Wu</h1>
-
-                <p><a href="mailto:kawu@usc.edu">kawu@usc.edu</a></p>
-            </div>
-            <hr>
-            <!-- #section-one -->
-            <div id="section-two">
-                <div id="favorites">
-                    <p>Favorite color: <strong>Turquoise</strong></p>
-
-                    <p>Favorite website: <a target="_blank" href="https://www.canva.com/">Canva</a></p>
-
-                    <p>Favorite activity:</p>
-
-                    <img src="https://goccusports.com/images/2023/6/22/volleyball_on_court.png" alt="Volleyball">
-                </div>
-                <!-- #favorites -->
-                <div id="classes">
-                    <p>Fall 2023 Schedule:</p>
-
-                    <ul>
-                        <li>MATH 126: Calculus II</li>
-                        <li>ENGL 298: Introduction to the Genre of Fiction</li>
-                        <li>CSCI 170: Discrete Methods in Computer Science</li>
-                        <li>ITP 104: Introduction to Web Development</li>
-                        <li>ECON 351: Microeconomics for Business</li>
-                    </ul>
-                </div>
-                <!-- #classes -->
-            </div>
-            <!-- #section-two -->
-            <hr>
-            <div id="section-three">
-                <div id="assignments">
-                    <p>Assignments:</p>
-
-                    <ul>
-                        <li><a target="_blank" href="assignment_01/assignment_01.html">Assignment 1</a></li>
-                        <li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2</a></li>
-                        <li><a target="_blank" href="assignment_03/assignment_03.html">Assignment 3</a></li>
-                        <li><a target="_blank" href="assignment_04/assignment_04.html">Assignment 4</a></li>
-                        <li><a target="_blank" href="assignment_05/assignment_05.html">Assignment 5</a></li>
-                        <li><a target="_blank" href="assignment_06/assignment_06.html">Assignment 6</a></li>
-                    </ul>
-                    
-                </div>
-                <!-- #assignments -->
-                <div id="labs">
-                    <p>Labs:</p>
-
-                    <ul>
-                        <li><a target="_blank" href="lab_02/index.html">Lab 2: Student Page</a></li>
-                        <li><a target="_blank" href="lab_03/assignment_01.html">Lab 3: Updated Resume</a></li>
-                        <li><a target="_blank" href="index.html">Lab 4: Student Page Layout</a></li>
-                        <li><a target="_blank" href="lab_05/lab_05.html">Lab 5: Form Page</a></li>
-                        <li><a target="_blank" href="lab_06/lab_06.html">Lab 6: Simple Photo Gallery</a></li>
-                        <li><a target="_blank" href="lab_07/lab_07.html">Lab 7: Image Puzzle</a></li>
-                    </ul>
-
-                </div>
-                <!-- #labs -->
-            </div>
-            <!-- #section-three -->
+            <p><a href="mailto:kawu@usc.edu">kawu@usc.edu</a></p>
         </div>
-        <!-- #container -->
-    </body>
+        <hr>
+        <!-- #section-one -->
+        <div id="section-two">
+            <div id="favorites">
+                <p>Favorite color: <strong>Turquoise</strong></p>
+
+                <p>Favorite website: <a target="_blank" href="https://www.canva.com/">Canva</a></p>
+
+                <p>Favorite activity:</p>
+
+                <img src="https://goccusports.com/images/2023/6/22/volleyball_on_court.png" alt="Volleyball">
+            </div>
+            <!-- #favorites -->
+            <div id="classes">
+                <p>Fall 2023 Schedule:</p>
+
+                <ul>
+                    <li>MATH 126: Calculus II</li>
+                    <li>ENGL 298: Introduction to the Genre of Fiction</li>
+                    <li>CSCI 170: Discrete Methods in Computer Science</li>
+                    <li>ITP 104: Introduction to Web Development</li>
+                    <li>ECON 351: Microeconomics for Business</li>
+                </ul>
+            </div>
+            <!-- #classes -->
+        </div>
+        <!-- #section-two -->
+        <hr>
+        <div id="section-three">
+            <div id="assignments">
+                <p>Assignments:</p>
+
+                <ul>
+                    <li><a target="_blank" href="assignment_01/assignment_01.html">Assignment 1: Web Resume</a></li>
+                    <li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2: Interests Page</a></li>
+                    <li><a target="_blank" href="assignment_03/assignment_03.html">Assignment 3: Two-Column Interests Page</a></li>
+                    <li><a target="_blank" href="assignment_04/assignment_04.html">Assignment 4: Calendar</a></li>
+                    <li><a target="_blank" href="assignment_05/assignment_05.html">Assignment 5: Interests Page Gallery Layout</a></li>
+                    <li><a target="_blank" href="assignment_06/assignment_06.html">Assignment 6: Fonts, Drop-down Menu, Overlay Captions</a></li>
+                </ul>
+                
+            </div>
+            <!-- #assignments -->
+            <div id="labs">
+                <p>Labs:</p>
+
+                <ul>
+                    <li><a target="_blank" href="lab_02/index.html">Lab 2: Student Page</a></li>
+                    <li><a target="_blank" href="lab_03/assignment_01.html">Lab 3: Updated Resume</a></li>
+                    <li><a target="_blank" href="lab_04/index.html">Lab 4: Student Page Layout</a></li>
+                    <li><a target="_blank" href="lab_05/lab_05.html">Lab 5: Form Page</a></li>
+                    <li><a target="_blank" href="lab_06/lab_06.html">Lab 6: Simple Photo Gallery</a></li>
+                    <li><a target="_blank" href="lab_07/lab_07.html">Lab 7: Image Puzzle</a></li>
+                    <li><a target="_blank" href="index.html">Lab 8: Responsive Student Page</a></li>
+                </ul>
+
+            </div>
+            <!-- #labs -->
+        </div>
+        <!-- #section-three -->
+    </div>
+    <!-- #container -->
+</body>
 </html>
 
 <!-- Questions:
-line 33; do I need to set a width -> no!
-do I update the index.html or the one in lab 2 folder or make a lab 3 folder with a copy -> update og index.html -->
+Line 66 
+How to get rid of the extra space on the top-->
