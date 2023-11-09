@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 10</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        h1 {
+            margin: 0px;
+            padding: 0px;
+        }
+        #header {
+            text-align: center;
+            background-color: #f5baec;
+            height: 100px;
+            line-height: 100px;
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: #f7d7f3;
+            margin: 0px;
+            padding: 0px;
+        }
+        #img-container {
+            /* width: 900px;
+            margin-left: auto;
+            margin-right: auto; */
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+        }
+        img {
+            height: 300px;
+            width: auto;
+            position: absolute;
+        }
+
+        .pic-1 {
+            top: 10px;
+        }
+
+        .pic-2 {
+            top: 20px;
+        }
+
+        .pic-3 {
+            top: 30px;
+        }
+
+        .pic-4 {
+            top: 40px;
+        }
+
+        /* Do position absolute instead of position: relative + the following */
+         /* .pic-1 {
+            left: 337.5px;
+        }
+
+        .pic-2 {
+            left: 112.5px;
+        }
+
+        .pic-3 {
+            right: 112.5px;
+        }
+        
+        .pic-4 {
+            right: 337.5px;
+        } */
+
+        #img-container img{ 
+            transition: all 2s;
+        }
+
+        #img-container:hover .pic-1 {
+            transform: translateX(-225px);
+        }
+
+        #img-container:hover .pic-2 {
+            transform: translate(-225px, 300px);
+        }
+
+        #img-container:hover .pic-3 {
+            transform: translateX(225px);
+        } 
+
+        #img-container:hover .pic-4 {
+            transform: translate(225px, 300px);
+        }  
+
+        @media (max-width: 991px) {
+			/* All CSS here is for tablets & smaller */
+			body {
+                background-color: #f7f2d7;
+            }
+		}
+
+		/* Mobile: Screen Sizes <= 767px */
+		@media (max-width: 767px) {
+			body {
+                background-color: #fad3c8;
+            }
+
+            img {
+                height: 200px;
+            }
+
+            #img-container:hover .pic-1 {
+                transform: translateX(-150px);
+            }
+
+            #img-container:hover .pic-2 {
+                transform: translate(-150px, 200px);
+            }
+
+            #img-container:hover .pic-3 {
+                transform: translateX(150px);
+            } 
+
+            #img-container:hover .pic-4 {
+                transform: translate(150px, 200px);
+            } 
+		}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Sunsets</h1>
+    </div>
+    <div id="img-container">
+        <img class="pic-1" src="img/pic-1.jpg" alt="Picture 1">
+        <img class="pic-2" src="img/pic-2.jpg" alt="Picture 2">
+        <img class="pic-3" src="img/pic-3.jpg" alt="Picture 3">
+        <img class="pic-4" src="img/pic-4.jpg" alt="Picture 4">
+    </div>
+</body>
+</html>
